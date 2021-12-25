@@ -63,14 +63,14 @@ function App() {
           buttonText={stringResource.portfolio.gdprbutton}
           cookieName='gdprCookie'
           style={{
-            background: 'lightseagreen',
+            background: '#ffe5b4',
             fontSize: '1em',
             color: '#323232',
           }}
           buttonStyle={{
             color: '#323232',
             fontSize: '1em',
-            background: '#ffc107',
+            background: 'lightblue',
             padding: '0px 5px 0px 5px',
           }}
           expires={150}
