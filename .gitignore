@@ -1,0 +1,16 @@
+node_modules/
+build/
+*.config
+*.obj
+*.exe
+*.pdb
+*.user
+*.vspscc
+*.bak
+*.cache
+*.log
+*.eslintcache
+*.DS_Store 
+# Local Netlify folder
+.netlify
+.env

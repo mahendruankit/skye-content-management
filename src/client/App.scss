@@ -1,0 +1,183 @@
+@import './variables.scss';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./font/Roboto-Light.woff2') format('woff2'),
+    url('./font/Roboto-Light.woff') format('woff'),
+    url('./font/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --content-flex: $content-flex;
+  --fontsize-p: $fontsize-p;
+  --fontsize-nav: $fontsize-nav;
+  --typing-font: $typing-font;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+p {
+  font-size: $fontsize-p;
+  color: $link-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 1em;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.page {
+  flex: 1;
+  background-color: $page-color;
+}
+
+.header {
+  display: flex;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  background: $menu-color;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  color: $link-color;
+  justify-content: center;
+  background: transparent;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: $page-color;
+  min-height: 100vh;
+  color: $link-color;
+  margin-top: 3em;
+}
+
+.page__breadcrumb {
+  text-align: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin-top: 3em;
+  padding: 1em;
+  a {
+    text-decoration: none;
+    color: $link-color;
+  }
+}
+
+.page__breadcrumb__crumb {
+  color: $link-color;
+  display: inline;
+}
+
+.page__breadcrumb__crumb__name {
+  color: $link-color;
+  margin-right: 0.5em;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  margin: 1em;
+  border: 0;
+  font-weight: bold;
+  padding: 0 4em;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 40px;
+  color: $link-color !important;
+}
+
+button:hover {
+  background-color: $primary-color;
+}
+
+.contact__card {
+  height: auto;
+  width: 400px;
+  display: block;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px $primary-color, 0 1px 2px $primary-color;
+  transition: all 0.2s ease-in-out;
+  background-color: $primary-color;
+}
+
+input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+  margin: 1em;
+}
+
+label {
+  margin: 1em;
+}
+
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  font-size: 14px;
+  margin: 1em;
+  font-family: $font-family;
+}
+
+@media screen and (max-width: 980px) {
+  :root {
+    --fontsize-nav: 1rem;
+    --typing-font: 2rem;
+  }
+  .content-row {
+    flex-direction: column;
+  }
+  .content-row--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .contact__card {
+    width: 300px;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.contactSection {
+  align-items: center;
+  text-align: center;
+}
+
+.contact__card__avatar {
+  content: url('../../images/avatar.png');
+  height: 5em;
+  width: 5em;
+  border-radius: 2.5em;
+}
+
+.contact__card__avatarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__card__phone,
+.contact__card__email {
+  margin: 1em;
+}
+
+.contact__card {
+  padding: 1em;
+}
