@@ -78,6 +78,8 @@ p {
   min-height: 100vh;
   color: $link-color;
   margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .page__breadcrumb {
@@ -179,5 +181,10 @@ textarea {
 
   .contact__card {
     width: 300px;
+  }
+
+  .content {
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
