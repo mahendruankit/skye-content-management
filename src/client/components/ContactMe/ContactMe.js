@@ -56,7 +56,7 @@ export default function ContactMe() {
               name='from_name'
               value='Skye Content Management'
             />
-            <input placeholder='Name' type='text' name='to_name' />
+            <input placeholder='Name' type='text' name='to_name' required />
           </div>
 
           <div id='Email'>

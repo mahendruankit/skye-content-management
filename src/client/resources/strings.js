@@ -18,8 +18,8 @@ const strings = {
 
     contact: {
       title: 'How can I help?',
-      phone: '+91 9599348822',
-      email: 'loch.nishi@gmail.com',
+      phone: '+91 1111111111',
+      email: 'xyz@gmail.com',
     },
   },
 };
