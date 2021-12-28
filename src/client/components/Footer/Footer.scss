@@ -6,13 +6,9 @@
   width: 100%;
   justify-content: center;
   text-align: center;
-  background: $menu-color;
-  color: $link-color;
+  background-color: $footer;
+  color: $page-color;
   font-size: small;
-}
-
-.footer__logo {
-  margin: 0em 3em 1em 3em;
 }
 
 .footer__logo img {
@@ -22,11 +18,9 @@
 .footer__details {
   a {
     text-decoration: none;
-    color: $primary-color;
     text-decoration: none;
   }
   a:hover {
-    color: $primary-color;
     text-decoration: none;
   }
 
@@ -52,7 +46,6 @@ ul li {
 
 .footer__details__item {
   font-weight: bold;
-  color: $tertiary-color;
 }
 
 @media screen and (max-width: 600px) {

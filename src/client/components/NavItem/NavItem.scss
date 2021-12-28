@@ -3,11 +3,11 @@
 .menuItem {
   margin-bottom: 0.5em;
   a {
-    color: $link-color;
+    color: $page-color;
   }
 }
 .menuItem--active {
-  border-bottom: 1px solid $primary-color;
+  border-bottom: 1px solid $page-color;
   transition: border-bottom 0.5s ease-in-out;
   font-weight: bold;
 }

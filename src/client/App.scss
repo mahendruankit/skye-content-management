@@ -26,6 +26,8 @@
 p {
   font-size: $fontsize-p;
   color: $link-color;
+  text-align: justify;
+  margin: 0 0 1em 0;
 }
 
 h1,
@@ -78,8 +80,6 @@ p {
   min-height: 100vh;
   color: $link-color;
   margin-top: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
 }
 
 .page__breadcrumb {
@@ -119,18 +119,6 @@ button {
   color: $link-color;
 }
 
-.contact__card {
-  height: auto;
-  width: 400px;
-  display: block;
-  position: relative;
-  margin: 50px auto;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px $primary-color, 0 1px 2px $primary-color;
-  transition: all 0.2s ease-in-out;
-  background-color: $primary-color;
-}
-
 input {
   border: none;
   -webkit-appearance: none;
@@ -165,10 +153,12 @@ textarea {
   font-family: $font-family;
 }
 
-button {
+.spacer {
+  margin: 1em;
+  padding: 1em;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 600px) {
   :root {
     --fontsize-nav: 1rem;
     --typing-font: 2rem;
@@ -178,14 +168,5 @@ button {
   }
   .content-row--reverse {
     flex-direction: column-reverse;
-  }
-
-  .contact__card {
-    width: 300px;
-  }
-
-  .content {
-    margin-left: 1em;
-    margin-right: 1em;
   }
 }

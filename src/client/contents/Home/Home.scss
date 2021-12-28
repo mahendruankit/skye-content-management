@@ -1,3 +1,39 @@
+@import '../../variables.scss';
+
 .home {
   text-align: center;
+}
+
+.home__section,
+.home__section__secondary,
+.home__section__tertiary {
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.home__section__secondary {
+  background-color: $secondary-color;
+}
+
+.home__section__tertiary {
+  background-color: $tertiary-color;
+}
+
+.home__logo {
+  margin: 1em 3em 1em 3em;
+}
+
+.home__logo img {
+  width: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .home__section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .home__logo img {
+    width: 30%;
+  }
 }

@@ -18,7 +18,7 @@ const Footer = () => {
           | All rights reserved
         </li>
       </ul>
-      <Social className='footer' />
+      <Social />
     </div>
   );
 };

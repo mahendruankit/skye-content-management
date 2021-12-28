@@ -15,13 +15,13 @@ button {
 }
 
 .button--primary {
-  background: $primary-color;
-  border-color: $primary-color;
+  background: $page-color;
+  border-color: $page-color;
 }
 
 .button--secondary {
-  background: $secondary-color;
-  border-color: $secondary-color;
+  background: $page-color;
+  border-color: $page-color;
 }
 
 .button--small {
@@ -44,5 +44,5 @@ button {
 }
 
 .button--secondary:hover {
-  background-color: $primary-color;
+  background-color: $secondary-color;
 }

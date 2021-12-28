@@ -2,6 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import stringResource from '../../resources/strings';
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import Button from '../Common/Button/Button';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ContactMe.scss';
@@ -31,7 +32,7 @@ export default function ContactMe() {
   }
 
   return (
-    <div className='contact contactSection'>
+    <div className='contact'>
       <div className='contact__card'>
         <h2 className='contact__card__title'>Contact Me</h2>
         <div className='contact__card__avatarContainer'>
@@ -76,9 +77,12 @@ export default function ContactMe() {
               cols='100'
             />
           </div>
-          <button style={{ marginBottom: '1em' }} type='submit'>
-            Send{' '}
-          </button>
+          <Button
+            label='Send'
+            size='medium'
+            type='submit'
+            primary={true}
+          ></Button>
         </form>
       </div>
     </div>
