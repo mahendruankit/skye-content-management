@@ -1,20 +1,59 @@
 @import '../../variables.scss';
 
-.items {
+.navbar {
   text-align: center;
-  padding: 0.5em;
+  height: 2rem;
+  min-width: 100%;
+  display: flex;
+
   ul {
-    display: inline;
+    display: flex;
+    list-style: none;
     font-size: $fontsize-nav;
-    text-align: center;
     list-style-type: none;
     text-decoration: none;
+    align-items: center;
   }
 
   li {
     display: inline;
   }
+
   a {
     text-decoration: none;
+  }
+}
+
+.navbar {
+  display: none;
+}
+
+.navbar.active {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  color: $link-color;
+  justify-content: center;
+  background: transparent;
+
+  &__home {
+    color: $primary-color;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.active {
+    display: flex;
+    text-align: center;
+
+    ul {
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      font-size: 0.9em;
+    }
+
+    li {
+      margin: 0px 0.625em 0.3125em;
+    }
   }
 }

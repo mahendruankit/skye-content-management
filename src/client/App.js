@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './components/Common/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { HashRouter, Route } from 'react-router-dom';
@@ -19,11 +20,9 @@ function App() {
     <div className='App'>
       <div className='page'>
         <HashRouter basename={process.env.PUBLIC_URL}>
-          <header className='page header'>
-            <div className='page navbar'>
-              <Navbar handleMenu={handleMenu} />
-            </div>
-          </header>
+          <Header className='header active'>
+            <Navbar className='navbar active' />
+          </Header>
 
           {routes.map(({ path, Component }, key) => (
             <Route
