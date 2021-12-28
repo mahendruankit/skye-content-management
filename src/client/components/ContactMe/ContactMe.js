@@ -34,7 +34,6 @@ export default function ContactMe() {
   return (
     <div className='contact'>
       <div className='contact__card'>
-        <h2 className='contact__card__title'>Contact Me</h2>
         <div className='contact__card__avatarContainer'>
           <div className='contact__card__avatar'></div>
         </div>

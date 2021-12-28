@@ -3,20 +3,19 @@
 .contact {
   align-items: center;
   text-align: center;
-  color: $page-color;
+  justify-content: center;
+  color: $link-color;
 }
 
 .contact__card {
   padding-top: 1rem;
   height: auto;
-  max-width: 50%;
   display: block;
   position: relative;
-  margin: 50px auto;
   border-radius: 5px;
-  box-shadow: 0 1px 3px $primary-color-variant, 0 1px 2px $primary-color-variant;
+  box-shadow: 0 1px 3px $page-color, 0 1px 2px $page-color;
   transition: all 0.2s ease-in-out;
-  background-color: $primary-color;
+  background-color: $page-color;
 }
 
 .contact__card__avatar {
@@ -35,12 +34,6 @@
 .contact__card__email {
   margin: 1em;
   a {
-    color: $page-color;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .contact__card {
-    max-width: 90%;
+    color: $link-color;
   }
 }
