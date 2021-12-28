@@ -64,12 +64,12 @@ function App() {
           style={{
             background: '#ffe5b4',
             fontSize: '1em',
-            color: '#323232',
+            color: 'rgba(0, 0, 0, 0.87)',
           }}
           buttonStyle={{
-            color: '#323232',
+            color: '#f7f7f7',
             fontSize: '1em',
-            background: 'lightblue',
+            background: 'rgba(0, 0, 0, 0.87)',
             padding: '0px 5px 0px 5px',
           }}
           expires={150}
