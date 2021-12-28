@@ -9,7 +9,7 @@
 .contact__card {
   padding-top: 1rem;
   height: auto;
-  width: 400px;
+  max-width: 50%;
   display: block;
   position: relative;
   margin: 50px auto;
@@ -41,6 +41,6 @@
 
 @media screen and (max-width: 600px) {
   .contact__card {
-    width: 300px;
+    max-width: 90%;
   }
 }
