@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.page__breadcrumb__crumb {
+  svg {
+    color: $primary-color-variant;
+  }
+
+  .page__breadcrumb__crumb__name {
+    color: $primary-color-variant;
+    font-weight: bold;
+  }
+}

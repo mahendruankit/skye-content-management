@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import './Breadcrumb.scss';
 
 const Breadcrumb = ({ crumbs, handleMenu }) => {
   if (crumbs.length <= 1) {
