@@ -16,8 +16,7 @@
 }
 
 .footer__logo img {
-  width: 6em;
-  height: 6em;
+  width: 15%;
 }
 
 .footer__details {
@@ -54,4 +53,10 @@ ul li {
 .footer__details__item {
   font-weight: bold;
   color: $tertiary-color;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__logo img {
+    width: 30%;
+  }
 }
