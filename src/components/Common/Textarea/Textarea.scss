@@ -1,0 +1,32 @@
+@import '../../../variables.scss';
+
+textarea {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  padding: 0.75em;
+  border-radius: 0.1875em;
+  font-size: 0.875em;
+  margin: 1em;
+  border-bottom: 2px solid $link-color-light;
+  font-family: $font-family;
+  width: 100%;
+}
+
+.textarea--large {
+  max-width: 65%;
+}
+.textarea--medium {
+  max-width: 25%;
+}
+
+textarea:hover {
+  background-color: transparent;
+}
+
+textarea:focus {
+  outline: none;
+}

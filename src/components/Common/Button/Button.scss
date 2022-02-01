@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  margin: 1em;
+  border: 0;
+  font-weight: bold;
+  padding: 0 4em;
+  height: 3em;
+  line-height: 3em;
+  border-radius: 2.5em;
+  color: $page-color;
+  font-family: $font-family;
+}
+
+.button--primary {
+  background-color: $secondary-color;
+  border-color: $primary-color;
+  color: $link-color;
+}
+
+.button--secondary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $page-color;
+}
+
+.button--small {
+  font-size: 0.75em;
+  margin: 1em;
+  padding: 0;
+  width: 4em;
+}
+
+.button--medium {
+  font-size: 14px;
+}
+
+.button--large {
+  font-size: 16px;
+}
+
+.button--primary:hover {
+  background-color: $primary-color;
+  color: $link-color;
+}
+
+.button--secondary:hover {
+  background-color: $secondary-color;
+  color: $link-color;
+}

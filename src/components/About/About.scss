@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.aboutSection {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+}
+
+.aboutSection__container {
+  display: flex;
+}
+
+.aboutSection__avatar {
+  width: 40%;
+}
+
+.aboutSection__introduction {
+  width: 60%;
+}
+
+.aboutSection__avatar__image {
+  width: 100%;
+  height: auto;
+}
+
+.about__logo {
+  margin: 1em 3em 1em 3em;
+}
+
+.about__logo img {
+  width: 15%;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutSection {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .aboutSection__container {
+    flex-direction: column;
+  }
+
+  .aboutSection__introduction,
+  .aboutSection__avatar {
+    width: 100%;
+  }
+
+  .aboutSection__avatar__image {
+    width: 80%;
+    height: auto;
+  }
+}
